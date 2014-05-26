@@ -1,6 +1,12 @@
-meal = 20
-tax = 0.12
-tip = 0.2
+puts "Enter the cost of meal before tax"
+meal = gets.chomp
+meal = Float(meal)
+puts "Enter the tax rate"
+tax = gets.chomp
+tax = tax.to_f
+puts "Enter the tip rate you like"
+tip = gets.chomp
+tip = tip.to_f
 tax_value = meal * tax
 meal_with_tax = meal + tax_value
 tip_value = meal_with_tax * tip
